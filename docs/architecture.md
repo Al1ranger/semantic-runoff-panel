@@ -1,0 +1,15 @@
+# Boundary and mechanism
+
+SemanticRunoffPanel is a fixed-membership, weighted preference aggregation primitive. A participant's signed transaction adopts the exact bytes of a commit-pinned published ballot statement. GenLayer independently acquires and interprets that statement. This is authored preference, not a claim about external reality or evidence that a service was delivered.
+
+Immutable slate + immutable address/weight roster → participant-signed source adoption → independently fetched full text and independently extracted partial ranking/abstention → exact full-report agreement → replace only that participant's latest ballot slot, preserving immutable attempts → permissionless bounded runoff → root-bound result.
+
+The stored objects are polls, participant ballot slots, immutable attempts and a terminal round transcript. There are no owner-controlled graph mutations, resource capacities, compatibility matrices, flow networks, winner pricing, graph-head adoption, certificates or one-time consumption. Weighted instant-runoff is established social-choice machinery, not claimed as a new algorithm. The distinct contract boundary is independent natural-language ballot transcription bound to authenticated participants and a conservative transferable tally.
+
+Unlike Consensus Selection, models do not score proposals or choose the winner. Unlike a prediction scoreboard, participants do not forecast external events or receive accuracy scores. Unlike SemanticFlowEnvelope, no supply is allocated and no feasibility bound is optimized. The model extracts only explicitly adopted preferences; the deterministic rounds transfer fixed voting weight without minting votes.
+
+Every address can change only its own ballot, at most three committed attempts, before the deadline and before finalization. A source failure or unclear revision supersedes the prior active ballot conservatively; it does not silently preserve a vote the participant attempted to replace. All attempts remain immutable. Nobody can change the roster, slate or deadline after creation.
+
+Anyone can finalize early only after every member has a usable ranked ballot or explicit abstention; otherwise they can finalize after the deadline with INCOMPLETE and no winner. Unresolved/absent members are not silently discarded. A tied last place halts without an arbitrary tie-break. An explicit abstention is not an uncertain ballot. This rule differs from jurisdiction-specific election rules; not for public elections or political governance.
+
+Frontend owns source authoring/discovery and previews. Contract owns source integrity, sender binding, semantic extraction, exact comparison, revisions, deadline gates, weight conservation and terminal roots. External systems own human identity, panel selection fairness and source author trust. Fixed addresses are not proof of unique humans. Weights are configuration, not stake. All ballots and sources are public. No custody, secrecy, physical-world certification or execution authority is provided.
