@@ -1,0 +1,1220 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "accounts": [
+    {
+      "name": "studio-proof-deployer",
+      "address": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+    },
+    {
+      "name": "fairresolve-demo",
+      "address": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35"
+    },
+    {
+      "name": "reality-random2",
+      "address": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5"
+    }
+  ],
+  "fixture_commit": "282bf572b21a9959515f7a9e2eb1f5f1763e49dd",
+  "transactions": [
+    {
+      "step": "deploy",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "deploy",
+        "--contract",
+        "contracts/SemanticRunoffPanel.py"
+      ],
+      "hash": "0x3fd221e1b2a78cb44a0e879201ed55e8dd3f65f14acc6421d9b5d2b24ab6c2b1",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "open-expiry-v1",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "open_poll",
+        "--args",
+        "expiry-v1",
+        "a:Archive|b:Beacon|c:Canopy",
+        "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42:2|0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35:2|0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5:1",
+        "60"
+      ],
+      "hash": "0xd982dda1900e6bfe0c347810adbe17f50d141aff64f1ebc2f59d1cddc5321073",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "open-transfer-v1",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "open_poll",
+        "--args",
+        "transfer-v1",
+        "a:Archive|b:Beacon|c:Canopy",
+        "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42:2|0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35:2|0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5:1",
+        "1800"
+      ],
+      "hash": "0x23767bab30420398f1efad6fd7f266c23d73d9ca806d3570b424a177a9501759",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "source-held",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json",
+        "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+      ],
+      "hash": "0x56acd341626478e5a5c1002a999dac4812abf5cd88c73e1beb92ed93848a7a9b",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "unclear-revision",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "1",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/unclear.json",
+        "69f941e5bf5dcb242699005f7aecebcb7b31fae5b0c05c8105735f9c36a49313"
+      ],
+      "hash": "0x390b49e5d1032d73d248abe24c0aabe7e0fe8b73782d53343b49252ced52f474",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "beacon-ballot",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/beacon.json",
+        "6e237439421c45e9ace03903f86d4e55aa95dc391da7546a1037c22981b834be"
+      ],
+      "hash": "0xc37b2f9cbfc6ee59321c99dc10b712572e47607b0593e043aba98892768c8c76",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "canopy-ballot",
+      "signer": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/canopy.json",
+        "14bcefeb768e73c16f36e5d215217f0481bb86b0cbf422327a6e8c3eea041b6b"
+      ],
+      "hash": "0x8b8defbea4eb26ff26c779c5adc3f7c28f117d627a84b574effcb19fd4fd2ef1",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "unresolved-cannot-tally",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "finalize",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb"
+      ],
+      "expected_message": "Panel incomplete before deadline",
+      "hash": "0x5ac192cb68a8cba30d66e749e87aa13be17f7346783e6cd89a192fbd73d607c1",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error_matched": true,
+      "committed": false
+    },
+    {
+      "step": "corrected-archive",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "2",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json",
+        "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479"
+      ],
+      "hash": "0x3fe2e046fadd43d36f7f3200696baef55821ff823e448cae9e61d09edd67edf5",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "replay-revision",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "2",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json",
+        "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479"
+      ],
+      "expected_message": "Revision mismatch",
+      "hash": "0x228419954e29f7c41afa886f47cca1aaef860268ca19e8296f95995ef2469a57",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error_matched": true,
+      "committed": false
+    },
+    {
+      "step": "finalize-transfer",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "finalize",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb"
+      ],
+      "hash": "0x5931cc61081a686885833234e27afbf40be61fbde46a7b474bda80bc46dbab21",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "terminal-ballot",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "3",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json",
+        "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479"
+      ],
+      "expected_message": "Poll terminal",
+      "hash": "0xf29beed47de8d6ed7318f7ad8fa1a6dfb217db051465352a16cf9e20542b3803",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error_matched": true,
+      "committed": false
+    },
+    {
+      "step": "open-tie-v1",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "open_poll",
+        "--args",
+        "tie-v1",
+        "a:Archive|b:Beacon|c:Canopy",
+        "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42:1|0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35:1|0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5:1",
+        "1800"
+      ],
+      "hash": "0x61f723c477b642736cc2a7427027c22d64edcb674bcdba2985b75d291f619a6a",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "tie-archive",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json",
+        "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479"
+      ],
+      "hash": "0xc7ff7a08e1bf0788eedb7b45ab391d54490c5af65482f75d03b6503c21465fbf",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "tie-beacon",
+      "signer": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/beacon.json",
+        "6e237439421c45e9ace03903f86d4e55aa95dc391da7546a1037c22981b834be"
+      ],
+      "hash": "0xdabe32f18b901217b658b348fdba188f687ae9303ac0fd1be86999a1af093d4d",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "tie-canopy",
+      "signer": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/canopy.json",
+        "14bcefeb768e73c16f36e5d215217f0481bb86b0cbf422327a6e8c3eea041b6b"
+      ],
+      "hash": "0xdc517265442b5acef82a099516258a0d9aed011eb3c85f8432fdd0ad37ca5a95",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "finalize-tie",
+      "signer": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "finalize",
+        "--args",
+        "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa"
+      ],
+      "hash": "0x5a89312f1dccb38e549da65b423205f4c4a04d77892713ad761c7ca46b8c0f3b",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    },
+    {
+      "step": "deadline-ballot",
+      "signer": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "cast",
+        "--args",
+        "d918dfdcbf1307965fa80963e758ee970a556013245efdfef1c65452c9a45576",
+        "0",
+        "Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json",
+        "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479"
+      ],
+      "expected_message": "Ballot deadline passed",
+      "hash": "0xfd205b7cdbe24531c7d4652e21fe64fa804f4e8091cde60d2453f284509f360f",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "consensus": "MAJORITY_AGREE",
+      "expected_error_matched": true,
+      "committed": false
+    },
+    {
+      "step": "finalize-incomplete",
+      "signer": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+      "verified": true,
+      "cli_arguments": [
+        "write",
+        "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "finalize",
+        "--args",
+        "d918dfdcbf1307965fa80963e758ee970a556013245efdfef1c65452c9a45576"
+      ],
+      "hash": "0xcaad190dd37c36264d071e22423e272e38165560b61474bd889410499fb8910b",
+      "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "consensus": "MAJORITY_AGREE",
+      "committed": true
+    }
+  ],
+  "polls": {
+    "expiry-v1": {
+      "poll": "d918dfdcbf1307965fa80963e758ee970a556013245efdfef1c65452c9a45576",
+      "attempt_count": 0,
+      "ballots": {},
+      "config": {
+        "candidates": [
+          {
+            "id": "a",
+            "name": "Archive"
+          },
+          {
+            "id": "b",
+            "name": "Beacon"
+          },
+          {
+            "id": "c",
+            "name": "Canopy"
+          }
+        ],
+        "contract": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "creator": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+        "deadline": 1792439854,
+        "members": [
+          {
+            "address": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+            "weight": 2
+          },
+          {
+            "address": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+            "weight": 2
+          },
+          {
+            "address": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+            "weight": 1
+          }
+        ],
+        "nonce": "expiry-v1",
+        "policy": "semantic-runoff-panel-v1"
+      },
+      "config_root": "4da105972e2e8dde208af989e2c39f48825fb9fb0adfd3535dea1a5e7aabc9fd",
+      "final": {
+        "ballot_roots": [
+          "",
+          "",
+          ""
+        ],
+        "config_root": "4da105972e2e8dde208af989e2c39f48825fb9fb0adfd3535dea1a5e7aabc9fd",
+        "outcome": {
+          "rounds": [],
+          "status": "INCOMPLETE",
+          "unresolved": [
+            "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+            "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+            "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5"
+          ],
+          "winner": ""
+        },
+        "poll": "d918dfdcbf1307965fa80963e758ee970a556013245efdfef1c65452c9a45576",
+        "root": "182995cb321f121da0560b5c84b4c956c5ffd9773f4b11004c72d0e51e17e21f"
+      },
+      "status": "INCOMPLETE",
+      "attempts": [],
+      "verified": true
+    },
+    "transfer-v1": {
+      "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+      "attempt_count": 5,
+      "ballots": {
+        "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35": {
+          "attempt": "749584c72eb9f01ae176aa9099e95889ff7ad5b62fbc4ba3d00c7264b6a84746",
+          "ranking": [
+            "b",
+            "c",
+            "a"
+          ],
+          "revision": 0,
+          "root": "40e011f19d126cdf1e5d05050571b8032712e41909b0232459f58d18d9369d4d",
+          "status": "RANKED"
+        },
+        "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5": {
+          "attempt": "a2dc2209e46d519763421b70ecf0e37816bd24410b277cef2b43cd77be808d7e",
+          "ranking": [
+            "c",
+            "b",
+            "a"
+          ],
+          "revision": 0,
+          "root": "10040308e5f92e0899958840ddf5af115f8a7c8e8350d07b6b85007db70c3e6f",
+          "status": "RANKED"
+        },
+        "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42": {
+          "attempt": "850dc180d2b86386044885ac6f2865c223e2306f2162813c8a2ff8d44b9680ca",
+          "ranking": [
+            "a",
+            "b",
+            "c"
+          ],
+          "revision": 2,
+          "root": "bb8478e928d3feb1663ae71156be34dd57d7398900039b6d6b9d0c0c038e451f",
+          "status": "RANKED"
+        }
+      },
+      "config": {
+        "candidates": [
+          {
+            "id": "a",
+            "name": "Archive"
+          },
+          {
+            "id": "b",
+            "name": "Beacon"
+          },
+          {
+            "id": "c",
+            "name": "Canopy"
+          }
+        ],
+        "contract": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "creator": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+        "deadline": 1792441817,
+        "members": [
+          {
+            "address": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+            "weight": 2
+          },
+          {
+            "address": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+            "weight": 2
+          },
+          {
+            "address": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+            "weight": 1
+          }
+        ],
+        "nonce": "transfer-v1",
+        "policy": "semantic-runoff-panel-v1"
+      },
+      "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+      "final": {
+        "ballot_roots": [
+          "bb8478e928d3feb1663ae71156be34dd57d7398900039b6d6b9d0c0c038e451f",
+          "40e011f19d126cdf1e5d05050571b8032712e41909b0232459f58d18d9369d4d",
+          "10040308e5f92e0899958840ddf5af115f8a7c8e8350d07b6b85007db70c3e6f"
+        ],
+        "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+        "outcome": {
+          "rounds": [
+            {
+              "abstained_weight": 0,
+              "active": [
+                "a",
+                "b",
+                "c"
+              ],
+              "active_weight": 5,
+              "allocations": [
+                "a",
+                "b",
+                "c"
+              ],
+              "counts": [
+                2,
+                2,
+                1
+              ],
+              "eliminated": "c",
+              "exhausted_weight": 0,
+              "majority": ""
+            },
+            {
+              "abstained_weight": 0,
+              "active": [
+                "a",
+                "b"
+              ],
+              "active_weight": 5,
+              "allocations": [
+                "a",
+                "b",
+                "b"
+              ],
+              "counts": [
+                2,
+                3
+              ],
+              "eliminated": "",
+              "exhausted_weight": 0,
+              "majority": "b"
+            }
+          ],
+          "status": "ELECTED",
+          "total_weight": 5,
+          "winner": "b"
+        },
+        "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+        "root": "2da63cda63d1285feac8f1ba652b980abb4336a24268afaca4e000aaf071467d"
+      },
+      "status": "ELECTED",
+      "attempts": [
+        {
+          "key": "8fa392c3b6afd173515e22884e127f45f8ba3bf587f3c373849af12fc3741c2c",
+          "ballot": {
+            "ranking": [],
+            "status": "HELD"
+          },
+          "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+          "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+          "previous_attempt": "",
+          "report": {
+            "ballot": {
+              "ranking": [],
+              "status": "HELD"
+            },
+            "binding": {
+              "attempt": "8fa392c3b6afd173515e22884e127f45f8ba3bf587f3c373849af12fc3741c2c",
+              "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+              "revision": 0,
+              "source": {
+                "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json"
+              },
+              "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+            },
+            "document_status": "ACQUISITION_FAILED",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"My first choice is Archive. If Archive is eliminated, my next choice is Beacon, then Canopy.\"}\n",
+              "hash": "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479",
+              "http": 200,
+              "status": "HASH_MISMATCH",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json"
+            }
+          },
+          "revision": 0,
+          "root": "245df5b972087161911ffc078eba4146367cfab741e4ef6f270c40108ae6007f",
+          "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+        },
+        {
+          "key": "8c0698822f0aca3e51f6fe56bad079d111817ea9faca267545da4a7dc9bd9abb",
+          "ballot": {
+            "ranking": [],
+            "status": "UNCLEAR"
+          },
+          "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+          "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+          "previous_attempt": "8fa392c3b6afd173515e22884e127f45f8ba3bf587f3c373849af12fc3741c2c",
+          "report": {
+            "ballot": {
+              "ranking": [],
+              "status": "UNCLEAR"
+            },
+            "binding": {
+              "attempt": "8c0698822f0aca3e51f6fe56bad079d111817ea9faca267545da4a7dc9bd9abb",
+              "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+              "revision": 1,
+              "source": {
+                "sha256": "69f941e5bf5dcb242699005f7aecebcb7b31fae5b0c05c8105735f9c36a49313",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/unclear.json"
+              },
+              "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"Archive and Beacon are equally good for my first choice. I do not distinguish between them and have no fallback preference.\"}\n",
+              "hash": "69f941e5bf5dcb242699005f7aecebcb7b31fae5b0c05c8105735f9c36a49313",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/unclear.json"
+            }
+          },
+          "revision": 1,
+          "root": "6f2ac6e1043535651050f117b7c7d187a19158e86f028a2c3beb2c7e712b2241",
+          "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+        },
+        {
+          "key": "850dc180d2b86386044885ac6f2865c223e2306f2162813c8a2ff8d44b9680ca",
+          "ballot": {
+            "ranking": [
+              "a",
+              "b",
+              "c"
+            ],
+            "status": "RANKED"
+          },
+          "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+          "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+          "previous_attempt": "8c0698822f0aca3e51f6fe56bad079d111817ea9faca267545da4a7dc9bd9abb",
+          "report": {
+            "ballot": {
+              "ranking": [
+                "a",
+                "b",
+                "c"
+              ],
+              "status": "RANKED"
+            },
+            "binding": {
+              "attempt": "850dc180d2b86386044885ac6f2865c223e2306f2162813c8a2ff8d44b9680ca",
+              "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+              "revision": 2,
+              "source": {
+                "sha256": "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json"
+              },
+              "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"My first choice is Archive. If Archive is eliminated, my next choice is Beacon, then Canopy.\"}\n",
+              "hash": "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json"
+            }
+          },
+          "revision": 2,
+          "root": "bb8478e928d3feb1663ae71156be34dd57d7398900039b6d6b9d0c0c038e451f",
+          "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+        },
+        {
+          "key": "749584c72eb9f01ae176aa9099e95889ff7ad5b62fbc4ba3d00c7264b6a84746",
+          "ballot": {
+            "ranking": [
+              "b",
+              "c",
+              "a"
+            ],
+            "status": "RANKED"
+          },
+          "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+          "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+          "previous_attempt": "",
+          "report": {
+            "ballot": {
+              "ranking": [
+                "b",
+                "c",
+                "a"
+              ],
+              "status": "RANKED"
+            },
+            "binding": {
+              "attempt": "749584c72eb9f01ae176aa9099e95889ff7ad5b62fbc4ba3d00c7264b6a84746",
+              "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+              "revision": 0,
+              "source": {
+                "sha256": "6e237439421c45e9ace03903f86d4e55aa95dc391da7546a1037c22981b834be",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/beacon.json"
+              },
+              "voter": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"I prefer Beacon first, then Canopy if Beacon is eliminated. Archive is my last choice.\"}\n",
+              "hash": "6e237439421c45e9ace03903f86d4e55aa95dc391da7546a1037c22981b834be",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/beacon.json"
+            }
+          },
+          "revision": 0,
+          "root": "40e011f19d126cdf1e5d05050571b8032712e41909b0232459f58d18d9369d4d",
+          "voter": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35"
+        },
+        {
+          "key": "a2dc2209e46d519763421b70ecf0e37816bd24410b277cef2b43cd77be808d7e",
+          "ballot": {
+            "ranking": [
+              "c",
+              "b",
+              "a"
+            ],
+            "status": "RANKED"
+          },
+          "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+          "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+          "previous_attempt": "",
+          "report": {
+            "ballot": {
+              "ranking": [
+                "c",
+                "b",
+                "a"
+              ],
+              "status": "RANKED"
+            },
+            "binding": {
+              "attempt": "a2dc2209e46d519763421b70ecf0e37816bd24410b277cef2b43cd77be808d7e",
+              "config_root": "6b58c0edc744532efb8a9582520cfc316bb9ebda758128b8bbd98bd09b576b2e",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+              "revision": 0,
+              "source": {
+                "sha256": "14bcefeb768e73c16f36e5d215217f0481bb86b0cbf422327a6e8c3eea041b6b",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/canopy.json"
+              },
+              "voter": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"Canopy is my first choice. If Canopy is eliminated, transfer my preference to Beacon, and then to Archive.\"}\n",
+              "hash": "14bcefeb768e73c16f36e5d215217f0481bb86b0cbf422327a6e8c3eea041b6b",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/canopy.json"
+            }
+          },
+          "revision": 0,
+          "root": "10040308e5f92e0899958840ddf5af115f8a7c8e8350d07b6b85007db70c3e6f",
+          "voter": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5"
+        }
+      ],
+      "verified": true
+    },
+    "tie-v1": {
+      "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+      "attempt_count": 3,
+      "ballots": {
+        "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35": {
+          "attempt": "d9b2003e3cfe313f849700b4b70a000991c53f18cfc8a690c9aabc6472669bf9",
+          "ranking": [
+            "b",
+            "c",
+            "a"
+          ],
+          "revision": 0,
+          "root": "66ed9719a713229b0076f46e9612f908a09f4ce73b97f948592fe2b143bc2317",
+          "status": "RANKED"
+        },
+        "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5": {
+          "attempt": "db96120fe339ddc91979bb738652e9a1134fd496ef91c17233680c96b203e214",
+          "ranking": [
+            "c",
+            "b",
+            "a"
+          ],
+          "revision": 0,
+          "root": "201e4a7470093cd72fc5659d689ee76430436b846bce9b8c989e37d5a1c64699",
+          "status": "RANKED"
+        },
+        "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42": {
+          "attempt": "2cab43ec4dde98b885bbe2d1a5800a1c1e35938b91cc60b57e89143b61f6c47c",
+          "ranking": [
+            "a",
+            "b",
+            "c"
+          ],
+          "revision": 0,
+          "root": "b641ca3503a76bab576c10e889fc4b03903121f0fb9bf393a51bcc80985d78ac",
+          "status": "RANKED"
+        }
+      },
+      "config": {
+        "candidates": [
+          {
+            "id": "a",
+            "name": "Archive"
+          },
+          {
+            "id": "b",
+            "name": "Beacon"
+          },
+          {
+            "id": "c",
+            "name": "Canopy"
+          }
+        ],
+        "contract": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+        "creator": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+        "deadline": 1792442334,
+        "members": [
+          {
+            "address": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+            "weight": 1
+          },
+          {
+            "address": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+            "weight": 1
+          },
+          {
+            "address": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+            "weight": 1
+          }
+        ],
+        "nonce": "tie-v1",
+        "policy": "semantic-runoff-panel-v1"
+      },
+      "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+      "final": {
+        "ballot_roots": [
+          "b641ca3503a76bab576c10e889fc4b03903121f0fb9bf393a51bcc80985d78ac",
+          "66ed9719a713229b0076f46e9612f908a09f4ce73b97f948592fe2b143bc2317",
+          "201e4a7470093cd72fc5659d689ee76430436b846bce9b8c989e37d5a1c64699"
+        ],
+        "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+        "outcome": {
+          "rounds": [
+            {
+              "abstained_weight": 0,
+              "active": [
+                "a",
+                "b",
+                "c"
+              ],
+              "active_weight": 3,
+              "allocations": [
+                "a",
+                "b",
+                "c"
+              ],
+              "counts": [
+                1,
+                1,
+                1
+              ],
+              "eliminated": "",
+              "exhausted_weight": 0,
+              "majority": ""
+            }
+          ],
+          "status": "TIED_LAST",
+          "total_weight": 3,
+          "winner": ""
+        },
+        "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+        "root": "44e7055a5d65662db0005f99d69011b669717867210467ad605457a316ef6fd1"
+      },
+      "status": "TIED_LAST",
+      "attempts": [
+        {
+          "key": "2cab43ec4dde98b885bbe2d1a5800a1c1e35938b91cc60b57e89143b61f6c47c",
+          "ballot": {
+            "ranking": [
+              "a",
+              "b",
+              "c"
+            ],
+            "status": "RANKED"
+          },
+          "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+          "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+          "previous_attempt": "",
+          "report": {
+            "ballot": {
+              "ranking": [
+                "a",
+                "b",
+                "c"
+              ],
+              "status": "RANKED"
+            },
+            "binding": {
+              "attempt": "2cab43ec4dde98b885bbe2d1a5800a1c1e35938b91cc60b57e89143b61f6c47c",
+              "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+              "revision": 0,
+              "source": {
+                "sha256": "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json"
+              },
+              "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"My first choice is Archive. If Archive is eliminated, my next choice is Beacon, then Canopy.\"}\n",
+              "hash": "2e5b66922d787ee8f6621d653b33be2b9d490c14790a93aefa45f8da3bdb3479",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/archive.json"
+            }
+          },
+          "revision": 0,
+          "root": "b641ca3503a76bab576c10e889fc4b03903121f0fb9bf393a51bcc80985d78ac",
+          "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42"
+        },
+        {
+          "key": "d9b2003e3cfe313f849700b4b70a000991c53f18cfc8a690c9aabc6472669bf9",
+          "ballot": {
+            "ranking": [
+              "b",
+              "c",
+              "a"
+            ],
+            "status": "RANKED"
+          },
+          "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+          "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+          "previous_attempt": "",
+          "report": {
+            "ballot": {
+              "ranking": [
+                "b",
+                "c",
+                "a"
+              ],
+              "status": "RANKED"
+            },
+            "binding": {
+              "attempt": "d9b2003e3cfe313f849700b4b70a000991c53f18cfc8a690c9aabc6472669bf9",
+              "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+              "revision": 0,
+              "source": {
+                "sha256": "6e237439421c45e9ace03903f86d4e55aa95dc391da7546a1037c22981b834be",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/beacon.json"
+              },
+              "voter": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"I prefer Beacon first, then Canopy if Beacon is eliminated. Archive is my last choice.\"}\n",
+              "hash": "6e237439421c45e9ace03903f86d4e55aa95dc391da7546a1037c22981b834be",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/beacon.json"
+            }
+          },
+          "revision": 0,
+          "root": "66ed9719a713229b0076f46e9612f908a09f4ce73b97f948592fe2b143bc2317",
+          "voter": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35"
+        },
+        {
+          "key": "db96120fe339ddc91979bb738652e9a1134fd496ef91c17233680c96b203e214",
+          "ballot": {
+            "ranking": [
+              "c",
+              "b",
+              "a"
+            ],
+            "status": "RANKED"
+          },
+          "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+          "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+          "previous_attempt": "",
+          "report": {
+            "ballot": {
+              "ranking": [
+                "c",
+                "b",
+                "a"
+              ],
+              "status": "RANKED"
+            },
+            "binding": {
+              "attempt": "db96120fe339ddc91979bb738652e9a1134fd496ef91c17233680c96b203e214",
+              "config_root": "20421825d61cd295ed9cc8320d224efb29a9769a54298f2d10bacac01c98c09d",
+              "policy": "semantic-runoff-panel-v1",
+              "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+              "revision": 0,
+              "source": {
+                "sha256": "14bcefeb768e73c16f36e5d215217f0481bb86b0cbf422327a6e8c3eea041b6b",
+                "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/canopy.json"
+              },
+              "voter": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5"
+            },
+            "document_status": "READY",
+            "source": {
+              "body": "{\"schema\":\"semantic-ballot-v1\",\"statement\":\"Canopy is my first choice. If Canopy is eliminated, transfer my preference to Beacon, and then to Archive.\"}\n",
+              "hash": "14bcefeb768e73c16f36e5d215217f0481bb86b0cbf422327a6e8c3eea041b6b",
+              "http": 200,
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/Al1ranger/semantic-runoff-panel/282bf572b21a9959515f7a9e2eb1f5f1763e49dd/examples/canopy.json"
+            }
+          },
+          "revision": 0,
+          "root": "201e4a7470093cd72fc5659d689ee76430436b846bce9b8c989e37d5a1c64699",
+          "voter": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5"
+        }
+      ],
+      "verified": true
+    }
+  },
+  "observations": {
+    "source-held": {
+      "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+      "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "slot": {
+        "attempt": "8fa392c3b6afd173515e22884e127f45f8ba3bf587f3c373849af12fc3741c2c",
+        "ranking": [],
+        "revision": 0,
+        "root": "245df5b972087161911ffc078eba4146367cfab741e4ef6f270c40108ae6007f",
+        "status": "HELD"
+      }
+    },
+    "unclear-revision": {
+      "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+      "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "slot": {
+        "attempt": "8c0698822f0aca3e51f6fe56bad079d111817ea9faca267545da4a7dc9bd9abb",
+        "ranking": [],
+        "revision": 1,
+        "root": "6f2ac6e1043535651050f117b7c7d187a19158e86f028a2c3beb2c7e712b2241",
+        "status": "UNCLEAR"
+      }
+    },
+    "beacon-ballot": {
+      "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+      "voter": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "slot": {
+        "attempt": "749584c72eb9f01ae176aa9099e95889ff7ad5b62fbc4ba3d00c7264b6a84746",
+        "ranking": [
+          "b",
+          "c",
+          "a"
+        ],
+        "revision": 0,
+        "root": "40e011f19d126cdf1e5d05050571b8032712e41909b0232459f58d18d9369d4d",
+        "status": "RANKED"
+      }
+    },
+    "canopy-ballot": {
+      "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+      "voter": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+      "slot": {
+        "attempt": "a2dc2209e46d519763421b70ecf0e37816bd24410b277cef2b43cd77be808d7e",
+        "ranking": [
+          "c",
+          "b",
+          "a"
+        ],
+        "revision": 0,
+        "root": "10040308e5f92e0899958840ddf5af115f8a7c8e8350d07b6b85007db70c3e6f",
+        "status": "RANKED"
+      }
+    },
+    "corrected-archive": {
+      "poll": "b520646aaee2e6ecb12dbe97b961de3c8d43999bf89d62768250c8862b96c7cb",
+      "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "slot": {
+        "attempt": "850dc180d2b86386044885ac6f2865c223e2306f2162813c8a2ff8d44b9680ca",
+        "ranking": [
+          "a",
+          "b",
+          "c"
+        ],
+        "revision": 2,
+        "root": "bb8478e928d3feb1663ae71156be34dd57d7398900039b6d6b9d0c0c038e451f",
+        "status": "RANKED"
+      }
+    },
+    "tie-archive": {
+      "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+      "voter": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+      "slot": {
+        "attempt": "2cab43ec4dde98b885bbe2d1a5800a1c1e35938b91cc60b57e89143b61f6c47c",
+        "ranking": [
+          "a",
+          "b",
+          "c"
+        ],
+        "revision": 0,
+        "root": "b641ca3503a76bab576c10e889fc4b03903121f0fb9bf393a51bcc80985d78ac",
+        "status": "RANKED"
+      }
+    },
+    "tie-beacon": {
+      "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+      "voter": "0x34346773a22564cbcc5F1D67D1c1F9f196DaEA35",
+      "slot": {
+        "attempt": "d9b2003e3cfe313f849700b4b70a000991c53f18cfc8a690c9aabc6472669bf9",
+        "ranking": [
+          "b",
+          "c",
+          "a"
+        ],
+        "revision": 0,
+        "root": "66ed9719a713229b0076f46e9612f908a09f4ce73b97f948592fe2b143bc2317",
+        "status": "RANKED"
+      }
+    },
+    "tie-canopy": {
+      "poll": "048a86c5a90f77a4979cb98c691ac2439eff81c4443988c20d377efb009780fa",
+      "voter": "0x5585Ea8f2FCC126bad0830EB9701E19b3CD800D5",
+      "slot": {
+        "attempt": "db96120fe339ddc91979bb738652e9a1134fd496ef91c17233680c96b203e214",
+        "ranking": [
+          "c",
+          "b",
+          "a"
+        ],
+        "revision": 0,
+        "root": "201e4a7470093cd72fc5659d689ee76430436b846bce9b8c989e37d5a1c64699",
+        "status": "RANKED"
+      }
+    }
+  },
+  "final_readback_verified": true,
+  "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+  "source": {
+    "address": "0x1e2F510F273E7F3acd814E08f2E1D8Fc312AdD4a",
+    "source_match": true,
+    "sha256": "a5305bc7d6f5dc0bd77fd90142d1d1c3301a008f0e3d1594794d6ad545835b57"
+  },
+  "wrong_root_consumer_denied": true,
+  "expected_outcomes_matched": {
+    "transfer": true,
+    "tie": true,
+    "expiry": true
+  }
+}
